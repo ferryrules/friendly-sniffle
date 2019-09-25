@@ -1,29 +1,30 @@
 import React from 'react';
 import './App.css';
-import { Segment, Button, Icon } from 'semantic-ui-react'
+// import { Segment, Icon } from 'semantic-ui-react'
+import { Button } from '@material-ui/core';
 
 export default class App extends React.Component {
   render() {
     return(
       <div>
-        <Segment raised>Sup bro</Segment>
-        <Button inverted color="red">Red</Button>
-        <Button animated color="yellow">
-          <Button.Content visible>Next</Button.Content>
-          <Button.Content hidden>
-            <Icon name='arrow right' />
-          </Button.Content>
+        <Button variant="contained" >
+          Default
         </Button>
-        <Button animated='vertical' color="blue">
-          <Button.Content hidden>Shop</Button.Content>
-          <Button.Content visible>
-            <Icon name='shop' />
-          </Button.Content>
+        <Button variant="contained" href="#contained-buttons" >
+          Link
         </Button>
-        <Button animated='fade' color="purple">
-          <Button.Content visible>Sign-up for a Pro account</Button.Content>
-          <Button.Content hidden>$12.99 a month</Button.Content>
-        </Button>
+        <input
+          accept="image/*"
+          id="contained-button-file"
+          multiple
+          type="file"
+          hidden
+        />
+        <label htmlFor="contained-button-file">
+          <Button variant="contained" component="span" >
+            Upload
+          </Button>
+        </label>
       </div>
     )
   }
