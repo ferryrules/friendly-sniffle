@@ -2,9 +2,12 @@ import React from 'react';
 import './App.css';
 // import { Segment, Icon } from 'semantic-ui-react'
 import { Button } from '@material-ui/core';
+import { Battery20, Battery30 } from '@material-ui/icons';
+import { Terminal as XTerm, type Theme } from 'xterm';
 
 export default class App extends React.Component {
   render() {
+    const terminal = new Terminal()
     return(
       <div>
         <Button variant="contained" >
@@ -21,10 +24,15 @@ export default class App extends React.Component {
           hidden
         />
         <label htmlFor="contained-button-file">
-          <Button variant="contained" component="span" >
+          <Button  component="span" >
             Upload
           </Button>
         </label>
+        <br />
+        <br />
+        <Battery20 />
+        <Battery30 />
+        <Terminal />
       </div>
     )
   }
