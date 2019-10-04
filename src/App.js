@@ -32,13 +32,13 @@ const App = () => (
       </div>
     </Parallax>
     <h1>| | |</h1>
-    <Parallax bgImage={image3} blur={{ min: -1, max: 3 }}>
+    <Parallax bgImage={image3} blur={{ min: -1, max: 5 }}>
       <div style={{ height: 500 }}>
         <div style={insideStyles}>Dynamic Blur</div>
       </div>
     </Parallax>
     <h1>| | |</h1>
-    <Parallax bgImage={image2} strength={-100}>
+    <Parallax bgImage={image2} strength={-200}>
       <div style={{ height: 500 }}>
         <div style={insideStyles}>Reverse direction</div>
       </div>
@@ -68,8 +68,8 @@ const App = () => (
         <div style={insideStyles}>renderProp</div>
       </div>
     </Parallax>
-    <div style={{ height: 500 }} />
-    <h2>{"\u2728"}</h2>
+    <div style={{ height: 300 }} />
+    <h2>{"\u2727"}</h2>
   </div>
 );
 
