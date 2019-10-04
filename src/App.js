@@ -6,19 +6,19 @@ const MyComponent = () => (
         {/* -----basic config-----*/}
         <Parallax
             blur={10}
-            bgImage={require('path/to/image.jpg')}
+            bgImage={require('./logo192.png')}
             bgImageAlt="the cat"
             strength={200}
         >
             Put some text content here - even an empty div with fixed dimensions to have a height
             for the parallax.
-            <div style={{ height: '200px' }} />
+            <div style={{ height: '1000px' }} />
         </Parallax>
 
         {/* -----dynamic blur-----*/}
         <Parallax
             blur={{ min: -15, max: 15 }}
-            bgImage={require('path/to/another/image.jpg')}
+            bgImage={require('./logo512.png')}
             bgImageAlt="the dog"
             strength={-200}
         >
