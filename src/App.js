@@ -25,25 +25,25 @@ const image4 =
 
 const App = () => (
   <div style={styles}>
-    <Hello name="Parallax" />
+    <Hello name="Danielle!" />
     <Parallax bgImage={image1} strength={500}>
       <div style={{ height: 500 }}>
-        <div style={insideStyles}>HTML inside the parallax</div>
+        <div style={insideStyles}>I kinda like you.</div>
       </div>
     </Parallax>
-    <h1>| | |</h1>
+    <h1>Ok, that's a lie.</h1>
     <Parallax bgImage={image3} blur={{ min: -1, max: 5 }}>
       <div style={{ height: 500 }}>
-        <div style={insideStyles}>Dynamic Blur</div>
+        <div style={insideStyles}>I really like you!</div>
       </div>
     </Parallax>
-    <h1>| | |</h1>
+    <h1>No, I'm still lying.</h1>
     <Parallax bgImage={image2} strength={-200}>
       <div style={{ height: 500 }}>
-        <div style={insideStyles}>Reverse direction</div>
+        <div style={insideStyles}>I fucking love you!</div>
       </div>
     </Parallax>
-    <h1>| | |</h1>
+    <h1>There! I said it!</h1>
     <Parallax
       bgImage={image4}
       strength={200}
@@ -65,11 +65,11 @@ const App = () => (
       )}
     >
       <div style={{ height: 500 }}>
-        <div style={insideStyles}>renderProp</div>
+        <div style={insideStyles}>Here's a cirle</div>
       </div>
     </Parallax>
     <div style={{ height: 300 }} />
-    <h2>{"\u2727"}</h2>
+    <h2>{"\u2713"}</h2>
   </div>
 );
 
