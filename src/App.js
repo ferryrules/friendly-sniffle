@@ -1,5 +1,4 @@
 import React from "react";
-// import { render } from "react-dom";
 import { Parallax } from "react-parallax";
 import Hello from "./Hello";
 
